@@ -21,7 +21,7 @@ export default function App() {
       <Header />
       <View style={styles.content}>
         <Text style={styles.title}>Temperatur & Luftfeuchtigkeit</Text>
-        <Text style={styles.subtitle}>Diese App zeigt Sensordaten an, die regelmäßig akualisiert werden.</Text>
+        <Text style={styles.subtitle}>Diese App zeigt Sensordaten an, die regelmäßig aktualisiert werden.</Text>
         <View style={styles.card}>
           <Text style={styles.cardText}>Temperatur: 25°C</Text>
           <Text style={styles.cardText}>Luftfeuchtigkeit: 60%</Text>
