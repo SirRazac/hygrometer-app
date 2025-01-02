@@ -11,7 +11,7 @@ const theme = {
     accent: '#BB6BD9', // Kräftiges Lila für Highlights
     background: '#E7D8EF', // Heller Hintergrund
     textDark: '#1E1E1E', // Textfarbe für hellen Hintergrund
-    textLight: '#EDEDED', // Textfarbe für dunklen Hintergrund
+    textLight: '#E7D8EF', // Textfarbe für dunklen Hintergrund
   },
 };
 

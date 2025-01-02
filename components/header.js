@@ -28,7 +28,7 @@ const styles = StyleSheet.create({
   },
   headerText: {
     textAlign: "center", // Text horizontal zentrieren
-    color: "#EDEDED", // Helle Schriftfarbe
+    color: "#E7D8EF", // Helle Schriftfarbe
     fontSize: 24, // Größere Schrift
     fontWeight: "bold", // Fetter Text
   },
