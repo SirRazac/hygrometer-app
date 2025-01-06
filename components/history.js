@@ -5,7 +5,7 @@ const History = ({ history }) => {
   return (
     <View style={styles.historyContainer}>
       <Text style={styles.historyTitle}>Historie</Text>
-      {/* ScrollView, um die Historie scrollbar zu machen */}
+      {/* ScrollView to make the history scrollable */}
       <ScrollView contentContainerStyle={styles.historyContent}>
         {history.map((entry, index) => (
           <View key={index} style={styles.historyItem}>
@@ -20,30 +20,30 @@ const History = ({ history }) => {
 
 const styles = StyleSheet.create({
   historyContainer: {
-    backgroundColor: '#7A4B8C', // Heller Akzent
+    backgroundColor: '#7A4B8C', // Light accent
     padding: 16,
     borderRadius: 8,
     width: '90%',
     marginTop: 20,
-    flex: 1, // Wichtig, um ScrollView im Container zu ermöglichen
+    flex: 1, // Important to enable ScrollView within the container
   },
   historyTitle: {
-    color: '#E7D8EF', // Textfarbe für dunklen Hintergrund
+    color: '#E7D8EF', // Text color for dark background
     fontSize: 20,
     fontWeight: 'bold',
     marginBottom: 10,
   },
   historyContent: {
-    paddingBottom: 20, // Um genug Platz für das Scrollen zu schaffen
+    paddingBottom: 20, // To ensure enough space for scrolling
   },
   historyItem: {
-    backgroundColor: '#49225B', // Basisfarbe
+    backgroundColor: '#49225B', // Base color
     padding: 12,
     borderRadius: 8,
     marginBottom: 8,
   },
   historyText: {
-    color: '#E7D8EF', // Textfarbe für dunklen Hintergrund
+    color: '#E7D8EF', // Text color for dark background
     fontSize: 16,
   },
 });
