@@ -11,6 +11,8 @@ const History = ({ history }) => {
           <View key={index} style={styles.historyItem}>
             <Text style={styles.historyText}>Temperatur: {entry.temperature}°C</Text>
             <Text style={styles.historyText}>Luftfeuchtigkeit: {entry.humidity}%</Text>
+            {/* Display the timestamp (date and time) */}
+            <Text style={styles.historyText}>Datum: {entry.timestamp}</Text>
           </View>
         ))}
       </ScrollView>

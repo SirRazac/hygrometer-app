@@ -33,13 +33,17 @@ export default function App() {
     const newTemperature = currentTemperature;
     const newHumidity = currentHumidity;
 
-    setCurrentTemperature(newTemperature);
-    setCurrentHumidity(newHumidity);
+    // Get the current date and time as a timestamp
+    const timestamp = new Date().toLocaleString(); // Example format: "1/18/2025, 10:00:00 AM"
 
-    // Add the new data to the history state
+    // Add the new data to the history state along with the timestamp
     setHistory(prevHistory => [
       ...prevHistory, 
-      { temperature: newTemperature, humidity: newHumidity }
+      { 
+        temperature: newTemperature, 
+        humidity: newHumidity, 
+        timestamp: timestamp // Include the timestamp
+      }
     ]);
 
     console.log("Data has been updated and added to the history!");
